@@ -1,0 +1,87 @@
+#mbody{
+    border: 2px solid aqua;
+    /* height: 500px; */
+    padding: 50px;
+    margin: 50px;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+}
+.container1 div{
+    display: flex;
+}
+.div1{
+    gap: 25px;
+}
+.img1{
+    display: flex;
+    grid-auto-rows: auto;
+}
+
+p{
+    font-size: 20px;
+}
+.btn{
+    background-color: coral;
+    padding: 5px 35px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* 2 ================================== */
+.container2 {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 100px;
+}
+.divht{
+    display: flex;
+    font-size: 30px;
+    flex-wrap: wrap;
+    
+}
+.parent2{
+    display: flex;
+}
+.parent2 p{
+    font-size: 28px;
+}
+.parent2 button{
+    background-color:black;
+    color: aliceblue;
+    padding: 10px 30px ;
+    border-radius: 10px;
+}
+.mother2{
+    justify-content: center;
+    align-content: center;
+}
+/* 3 ================================== */
+
+.container3{
+    background-image: url("../assets/bg.png");
+}
+.parent3 h1{
+    text-align: center;
+    font-size: 45px;
+    margin: 100px;
+}
+.divk{
+    width:400px;
+    /* height: auto; */
+    background: linear-gradient(to bottom,rgb(170, 232, 235),rgb(248, 246, 248));
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.mother3{
+    display: flex;
+    gap: 15px;
+   justify-content: space-between;
+}
+
+/* 4 ========================================= */
+
