@@ -1,13 +1,15 @@
 #mbody{
-    border: 2px solid aqua;
-    /* height: 500px; */
     padding: 50px;
-    margin: 50px;
 }
 
 .container1{
     display: flex;
     justify-content: space-between;
+}
+
+.bdr1{
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
 }
 .container1 div{
     display: flex;
@@ -31,10 +33,24 @@ p{
     border: none;
 }
 
+@media screen and (min-width:576px) {
+    .menubar img{
+        display:none;
+    }
+    .bdr1{
+        display: none;
+    }  
+}
+
+@media screen and (max-width:576px ) and (min-width:0px) {
+    .p1,.h31,.btn{
+        display: none;  
+    }     
+}
+
+
 /* 2 ================================== */
 .container2 {
-    /* display: flex;
-    justify-content: space-between; */
     margin-top: 100px;
 }
 .divht{
@@ -59,10 +75,18 @@ p{
     justify-content: center;
     align-content: center;
 }
+
+@media screen and (max-width:576px) {
+    .parent2{
+        flex-direction: column-reverse ;
+    }
+}
+
 /* 3 ================================== */
 
 .container3{
     background-image: url("../assets/bg.png");
+    width: 100%;
 }
 .parent3 h1{
     text-align: center;
@@ -70,9 +94,22 @@ p{
     margin: 100px;
 }
 .divk{
-    width:400px;
-    /* height: auto; */
-    background: linear-gradient(to bottom,rgb(170, 232, 235),rgb(248, 246, 248));
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(231, 250, 230),rgb(248, 246, 248));
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.divkk{
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(233, 252, 245),rgb(248, 246, 248));
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+.divkkk{
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(248, 242, 247), rgb(245, 224, 224));
     padding: 30px;
     text-align: center;
     border-radius: 15px;
@@ -83,5 +120,195 @@ p{
    justify-content: space-between;
 }
 
+@media screen and (max-width:576px) and (min-width:992px){
+    .container3{
+       flex-direction: column;
+    }
+}
+
+/*31 ================================ */
+
+.parent31{
+    width: 100%;
+    height: auto;
+    margin: 50px;
+}
+
+.mother31{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.im12{
+background-color: yellow;
+height: 60px;
+width: 60px;
+border-radius: 30px;
+align-content: center;
+}
+.im13{
+    background-color: yellow;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    align-content: center;
+    }
+
+    @media screen and (max-width:576px) {
+        .container31{
+            display: none;
+        }
+    }
+
 /* 4 ========================================= */
+.container4{
+    margin-top: 100px;
+    background-image: url("../assets/bg.png");
+    background-color: rgb(241, 232, 219);
+    height: 1100px;
+}
+.parent4 h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+.mother4{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 700px;    
+}
+.divm{
+    background-color:white;
+    border-radius: 20px;
+    width: 50%;
+    height: 700px;
+    font-size: 25px;
+}
+.divm p{
+    font-size: 20px;
+    height: 700px;
+}
+.divm img{
+    border-radius: 20px 20px 0 0;
+    width:100%;
+}
+.divmm{
+    padding: 20px;
+}
+.divmm button{
+    position: relative;
+    bottom:45px;
+    padding: 10px 25px;
+    background-color:rgb(20, 248, 248);
+    border-radius: 10px;
+    border: none;
+    
+}
+.divn{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    text-align: center;
+    height: 700px;
+    border-radius: 85px;   
+}
+
+.divn img{
+    background-color:rgb(115, 243, 122);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.div{
+    border-radius: 25px;
+}
+.imgg1,.imgg2,.imgg3,.imgg4{
+    border-radius: 15px;
+    background-color:white;
+    font-size: 20px;
+}
+.imgg1 button{
+background-color: darkgreen;
+padding: 10px 20px;
+font-size: 17px;
+border-radius: 10px;
+border: none;
+position: relative;
+bottom: 25px;
+}
+.imgg2 button{
+    background-color: rgb(52, 17, 209);
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    bottom: 25px;
+    }
+    .imgg3 button{
+        background-color: rgb(93, 238, 93);
+        padding: 10px 20px;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+        position: relative;
+        bottom: 25px;
+        }
+        .imgg4 button{
+            background-color: rgb(215, 233, 52);
+            padding: 10px 20px;
+            font-size: 17px;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            bottom: 25px;
+            }
+.parent4,.bttn4 button{
+    padding: 10px 25px;
+    text-align: center;    
+}
+.bttn4 button{
+    background-color: rgb(14, 15, 15);
+    color: white;
+    font-size: 25px;
+    padding: 10px 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (max-width:576px) {
+    .divm{
+        display: none;
+    }
+}
+/* 5 ============================================= */
+.footer5{
+    background-color: rgb(72, 72, 247);
+}
+.parent5{
+    padding: 15px;
+}
+.mother5{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;   
+}
+
+.imgg5{
+    display: flex;   
+}
+.mm5{
+    width: 40%;
+}
+@media screen and (max-width:576px) {
+    .footer5{
+        grid-template-columns: repeat (1, 1fr);
+    flex-direction: column;
+    }
+}
+
+
 
